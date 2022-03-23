@@ -49,7 +49,7 @@ function countDown() {
  if (currentTime == 0) {
    clearInterval(countDownTimerId)
    clearInterval(timerId)
-   alert('GAME OVER! Your final score is ' + result)
+   alert('GAME OVER! The final score is ' + result)
  }
 
 }
