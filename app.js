@@ -3,17 +3,12 @@ const mole = document.querySelector('.mole')
 const timeLeft = document.querySelector('#time-left')
 const score = document.querySelector('#score')
 const startGameButton = document.getElementById('#startGameButton')
-let countDownTimerId; 
+countDownTimerId = setInterval(countDown, 1000)
 
 let result = 0
 let hitPosition
 let currentTime = 60
 let timerId = null
-startGameButton.addEventListener('click', startGame);
-
-function startGame() {
-    countDownTimerId = setInterval(countDown, 1000)
-}
 
 function randomSquare() {
   squares.forEach(square => {
