@@ -17,3 +17,7 @@
     background-image: url('butter.png');
     background-size: cover;
 }
+
+#gameMusic {
+    display: none;
+  }

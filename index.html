@@ -14,9 +14,12 @@
     <h2>Score:</h2>
     <h2 id="score">0</h2>
 
-   
-    <h2>Time Left:</h2>
-    <h2 id="time-left">60</h2>
+    <h2><span id="timer">30</span> seconds remaining!</h2>
+
+<button id="playAgainButton" onclick="start()">Go!</button>
+
+
+
 
     
 
@@ -31,6 +34,9 @@
         <div class="square" id="8"></div>
         <div class="square" id="9"></div>
     </div>
+
+    <audio id="game-music" preload="auto" loop>
+        <source src="Sounds/Pop-Fashion.m4a" type="audio/wav">
       <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
       <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
       <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
